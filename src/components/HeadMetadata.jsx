@@ -1,6 +1,6 @@
 import React from 'react';
 import {Helmet} from 'react-helmet';
-import favicon from '../static/images/partnerz_logo.png';
+import favicon from '../static/images/favicon.png';
 
 function HeadMetadata({children, title}) {
   return (

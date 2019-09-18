@@ -1,7 +1,10 @@
 @media screen and (min-width: 650px) {
-    .page_head {
-        height: 70vh;
-        background: wheat;
-        clip-path: unset;
-    }
+  .page_head {
+    height: 70vh;
+    /* background: wheat; */
+  }
+
+  .head_content {
+    clip-path: unset;
+  }
 }
