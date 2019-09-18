@@ -1,0 +1,12 @@
+.page_head {
+  height: 50vh;
+  background: hotpink;
+  clip-path: polygon(0 0, 100% 0%, 100% 95%, 0 100%);
+}
+
+.navbar {
+  position: fixed;
+  background: blueviolet;
+  height: 6%;
+  width: 100%;
+}
