@@ -31,13 +31,13 @@
 
 .navbar_brand {
   width: 100%;
-  height: 60%;
+  height: 50%;
   object-fit: contain;
   object-position: center center;
 }
 
 .nav_icon {
-  transform: scale(1.5);
+  transform: scale(1.2);
 }
 
 .head_content {
