@@ -5,8 +5,7 @@ function IndexHead() {
   return (
     <header className="page_head">
       <NavBar />
-      <section className='head_content'>
-
+      <section className='head_content'> 
       </section>
     </header>
   );
