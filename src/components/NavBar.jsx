@@ -7,7 +7,7 @@ function NavBar() {
   return (
     <nav className="navbar">
       <div className="navbar_content">
-        <div className="navbar_item">
+        <div className="navbar_item nav_menu">
           <img className="nav_icon" src={menu} alt="menu" title="menu" />
         </div>
         <div className="navbar_item">
@@ -21,6 +21,7 @@ function NavBar() {
           <img className="nav_icon" src={book} alt="book" title="book" />
         </div>
       </div>
+      <div className="menu_overlay">hello world!!</div>
     </nav>
   );
 }

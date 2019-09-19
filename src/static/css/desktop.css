@@ -8,12 +8,28 @@
     clip-path: unset;
   }
 
+  .navbar {
+    position: relative;
+    /* bottom: var(--navbar_height); */
+  }
 
+  .nav_menu {
+    display: none;
+  }
 
+  .head_content {
+    margin-top: unset;
+  }
 
+  .nav_icon {
+    transform: scale(1.4);
+  }
 
+  .menu_overlay {
+    display: none;
+  }
 
-
-
-  
+  .bg_image {
+    
+  }
 }

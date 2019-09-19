@@ -7,11 +7,10 @@ import IndexFooter from '../components/IndexFooter';
 function index() {
   return (
     <>
-      <HeadMeta title="Partnerz | Your Financial Architects" />
+      <HeadMeta title="Partnerz FP Limited | Your Financial Architects" />
       <IndexHead />
       <IndexContent />
       <IndexFooter />
-      
     </>
   );
 }
