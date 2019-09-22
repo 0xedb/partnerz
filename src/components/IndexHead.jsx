@@ -7,6 +7,15 @@ function IndexHead() {
     <header className="page_head">
       <NavBar />
       <section className="head_content">
+        <div className="head_info">
+          <div class="info_container">
+            <h1>We're the Financial Architects</h1>
+            <div>
+              At Partnerz, we engineer and bring to life the goals and
+              aspirations of hardworking people
+            </div>
+          </div>
+        </div>
         <div className="bg_container">
           <picture>
             <source></source>
