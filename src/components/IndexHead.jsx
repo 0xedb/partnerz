@@ -11,7 +11,7 @@ function IndexHead() {
         <div className="head_info">
           <div className="info_container">
             <h1 className="slogan">We're the Financial Architects</h1>
-            <div className="">
+            <div className="slogan_details">
               At Partnerz, we engineer and bring to life the financial goals and
               aspirations of hardworking people
             </div>

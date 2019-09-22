@@ -3,17 +3,19 @@ import React from 'react';
 function IndexConent() {
   return (
     <main className="page_content">
-      <div className="content_heading">
-        <h2>Financial stability for everyone, by the experts</h2>
-      </div>
-      <div className="content_line"></div>
-      <div className="partnerz_description">
-        <p>
-          good for food, and that it was very good. And there was evening and
-          there was light. So the LORD God said, See, the man and put him in the
-          garden of Eden, to till it and keep it. God set them in the dome from
-          the tree, and I ate. So
-        </p>
+      <div className="description_container">  
+        <div className="content_heading">
+          <h2>Financial stability for everyone, by the experts</h2>
+        </div>
+        <div className="content_line"></div>
+        <div className="partnerz_description">
+          <p>
+            good for food, and that it was very good. And there was evening and
+            there was light. So the LORD God said, See, the man and put him in
+            the garden of Eden, to till it and keep it. God set them in the dome
+            from the tree, and I ate. So
+          </p>
+        </div>
       </div>
       God called to the voice of your wife, and have eaten of the tree that is
       pleasant to the sight and when the woman saw that the light Day, and the

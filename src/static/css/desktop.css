@@ -1,6 +1,7 @@
 @media screen and (min-width: 650px) {
   .page_head {
     height: 80vh;
+    margin-bottom: 40px;
     /* background: wheat; */
   }
 
@@ -30,6 +31,16 @@
   }
 
   .bg_image {
-    
+  }
+
+  .description_container {
+    /* position: static;
+    margin-top: 0;
+    clip-path: unset;
+    z-index: unset; */
+  }
+
+  .content_line {
+    width: 18%;
   }
 }

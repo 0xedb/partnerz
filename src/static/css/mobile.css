@@ -1,6 +1,5 @@
 .page_head {
   height: 75vh;
-  margin-bottom: 50px;
 }
 
 .navbar {
@@ -78,7 +77,7 @@
   z-index: 4;
   justify-content: center;
   align-items: center;
-  background: #0c08009f;
+  background: #3333339f;
 }
 
 .info_container {
@@ -95,8 +94,23 @@
 .page_content {
 }
 
+.description_container {
+  /* position: relative; 
+  margin-top: -4vh;
+  clip-path: polygon(0 0, 100% 0%, 100% 90%, 0 100%);
+  z-index: -4;
+  background: #b68324; */
+}
+
+.credit {
+  display: none;
+  visibility: hidden;
+}
+ 
+
 .content_heading {
   padding: 2%;
+  padding-top: 50px;
   text-align: center;
 }
 
@@ -111,11 +125,12 @@
     linear,
     left top,
     right top,
-    from(#7f9c09),
-    to(#61750d)
+    from(#31bd96),
+    to(#8945b3)
   );
 }
 
-.partnerz_description {
-  margin: 4%;
+.partnerz_description { 
+  padding: 2%; 
+  padding-bottom: 40px;
 }
