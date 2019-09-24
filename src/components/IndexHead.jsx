@@ -2,13 +2,16 @@ import React from 'react';
 import NavBar from './NavBar';
 import planning from '../static/images/main_bg_mobile_0.jpg';
 import planning0 from '../static/images/main_bg_desktop_0.jpg';
+import arrow_down from '../static/images/arrow_down.svg';
 
 function IndexHead() {
   return (
     <header className="page_head">
       <NavBar />
       <div className="to_content">
-        <a href="#page_content">🡣</a>
+        <a href="#page_content">
+          <img className="arrow_image" src={arrow_down} alt="continue reading" />
+        </a>
       </div>
       <section className="head_content">
         <div className="head_info">

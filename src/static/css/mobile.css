@@ -24,8 +24,11 @@
   animation: pointo 4s infinite;
 }
 
+.arrow_image {
+  height: 30px;
+}
+
 .to_content a {
-  font-size: 35px;
   padding: 20px;
 }
 
