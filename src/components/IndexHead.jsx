@@ -7,6 +7,9 @@ function IndexHead() {
   return (
     <header className="page_head">
       <NavBar />
+      <div className="to_content">
+        <a href="#page_content">🡣</a>
+      </div>
       <section className="head_content">
         <div className="head_info">
           <div className="info_container">

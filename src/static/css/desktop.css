@@ -1,6 +1,6 @@
 @media screen and (min-width: 650px) {
   .page_head {
-    height: 80vh;
+    /* height: 80vh; */
     margin-bottom: 40px;
     /* background: wheat; */
   }
@@ -42,5 +42,9 @@
 
   .content_line {
     width: 18%;
+  }
+
+  .to_content a { 
+    font-size: 50px;
   }
 }
