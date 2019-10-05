@@ -1,5 +1,6 @@
 .page_head {
   height: 100vh;
+  min-width: 300px;
 }
 
 .navbar {
@@ -86,6 +87,7 @@
   margin-top: var(--navbar_height);
   clip-path: polygon(0 0, 100% 0%, 100% 95%, 0 100%);
   height: 100%;
+  min-width: 300px;
 }
 
 .bg_container,
@@ -167,4 +169,62 @@
 .partnerz_description {
   padding: 5%;
   padding-bottom: 40px;
+  font-size: 1.2rem;
+}
+
+.services {
+  width: 100%;
+}
+
+.services h2 {
+  text-align: center; 
+}
+
+.service {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e6e8ee;
+  padding: 4px;
+  margin: 16px;
+  background: #eaecf0;
+  border-radius: 6px;
+  height: 300px;  
+  min-width: 300px;
+  transition: all 0.7s ease;
+}
+
+.service:hover {
+  color: white;
+  background: #94b60b;
+  margin-left: 0;
+  margin-right: 0;
+  border-radius: 0;
+  transition: all 0.7s ease;
+}
+
+.service_title {
+  font-size: 20px;
+  padding: 14px 0;
+  margin: 6px;
+}
+
+.service_description {
+  padding: 4px;
+  margin: 8px;
+}
+
+.service_image {
+  height: 40px;
+  border-radius: 100%;
+  margin: 6px;
+}
+
+.page_footer {
+  margin-top: 30px;
+  background: #f5f2f2fb;
+  height: 300px;
+  width: 100%;
+  min-width: 300px;
 }

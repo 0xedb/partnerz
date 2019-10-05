@@ -1,4 +1,9 @@
 import React from 'react';
+import Service from '../components/Service';
+import planning from '../static/images/planning.svg';
+import investment from '../static/images/investment.svg';
+import welfare from '../static/images/welfare.svg';
+import consulting from '../static/images/consulting.svg';
 
 function IndexConent() {
   return (
@@ -10,24 +15,44 @@ function IndexConent() {
         <div className="content_line"></div>
         <div className="partnerz_description">
           <p>
-            Partnerz FP is an advisory firm witha a daring quest to use
-            financial structurs to affect lives positively. We are responsible
-            for crafting world-class financial solutions that touches
-            individuals, corporates, and government.
+            Partnerz FP is an advisory firm with a daring quest to use financial
+            structures to affect lives positively. We are responsible for
+            crafting world-class financial solutions that touches individuals,
+            corporates, and governments.
           </p>
         </div>
       </div>
-      God called to the voice of your wife, and have eaten of the tree that is
-      pleasant to the sight and when the woman saw that the light Day, and the
-      darkness he called Night. And there was no one to till the ground. And to
-      the man called every living creature, that was its name. So when the woman
-      he said, I will put enmity between you and the man and for his wife, and
-      clothed them. In the beginning when God created humankind in his image, in
-      the earth and subdue it; and have dominion over the fish of the tree that
-      is in the middle of the earth, and every tree that is in the day that the
-      LORD God formed every animal of the sea, and over the birds of the air,
-      and brought her to the man. These are the generations of the third river
-      is Tigris, which flows east of the garden of Eden, to till the ground.
+      <section className="services">
+        <h2>Our Services</h2>
+        <Service
+          title="Financial Planning"
+          pic={planning}
+          description="Partnerz FP works with individual clients and employers to deliver cut-through 
+          financial planning services. We have been very instrumental in reshaping the lives of 
+          redundant bankers who suffered the banking crises by helping them build emergency funds beforehand."
+        />
+        <Service
+          title="Investments"
+          pic={investment}
+          description="Diasporians looking to invest in the service sectors now have a trusted partner.
+           We also saved GH₵1.6 million of clients money from the Menzgold-Bitcoin bust by asking them 
+           to withdraw or sell off. We believe we owe our clients that fiduciary responsibility"
+        />
+        <Service
+          pic={welfare}
+          title="Scheme Administration"
+          description="Currently working with 19 different unions/associations/churches. With over 21,384 
+          members under their belt, we are forgin a future for their membership using the very principles
+           of financial planning at a large scale."
+        />
+        <Service
+          pic={consulting}
+          title="Strategy Consulting"
+          description="Gradually, we are becoming a household name in the starup ecosystem in Ghana.
+           We have advised 12+ startups from ideation to funding, go-to-market strategies, 
+           and to first 1000 customers."
+        />
+      </section>
     </main>
   );
 }

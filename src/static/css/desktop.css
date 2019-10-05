@@ -33,6 +33,14 @@
   .bg_image {
   }
 
+  .info_container {
+    width: 60%;
+  }
+
+  .slogan {
+    
+  }
+
   .description_container {
     /* position: static;
     margin-top: 0;
@@ -46,6 +54,18 @@
 
   .arrow_image {
     height: 60px;
+  } 
+
+  .partnerz_description {
+    padding: 5% 20%;
+    text-align: center;
+    font-size: 1.6rem;
   }
+
+
+
+
+
+  
   
 }
