@@ -229,3 +229,19 @@
   width: 100%;
   min-width: 300px;
 }
+
+.copyright, .dev_info {
+  position: relative;
+  text-align: center; 
+  top: 90%; 
+  display: block;
+}
+
+.dev_info {
+  margin-bottom: 10px;
+}
+
+.mousekeyboard {
+  width: 16px;
+  height: 16px;
+}
