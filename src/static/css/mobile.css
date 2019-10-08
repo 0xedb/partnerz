@@ -170,6 +170,7 @@
   padding: 5%;
   padding-bottom: 40px;
   font-size: 1.2rem;
+  text-align: center;
 }
 
 .services {
@@ -197,7 +198,7 @@
 
 .service:hover {
   color: white;
-  background: #94b60b;
+  background: #48155c;
   margin-left: 0;
   margin-right: 0;
   border-radius: 0;

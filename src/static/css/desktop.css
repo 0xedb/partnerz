@@ -1,8 +1,12 @@
 @media screen and (min-width: 650px) {
   .page_head {
-    /* height: 80vh; */
     margin-bottom: 40px;
-    /* background: wheat; */
+    scrollbar-width: none;
+    overflow: hidden;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
   }
 
   .head_content {
@@ -38,7 +42,6 @@
   }
 
   .slogan {
-    
   }
 
   .description_container {
@@ -54,18 +57,44 @@
 
   .arrow_image {
     height: 60px;
-  } 
+  }
 
   .partnerz_description {
     padding: 5% 20%;
-    text-align: center;
     font-size: 1.6rem;
   }
 
+  .services,
+  .services_container {
+    display: flex;
+    flex-flow: row wrap;
+    width: 98%;
+    justify-content: center;
+    align-items: center;
+  }
 
+  .services_container {
+    flex-flow: column;
+    width: 100%;
+    max-width: 1743px;
+  }
 
+  .services h2 {
+    display: block;
+    width: 100%; 
+  }
 
+  .service {
+    min-width: 280px;
+    max-width: 550px;
+  }
 
-  
-  
+  .service:hover {
+    color: white;
+    background: #48155c;
+    padding: 4px;
+    margin: 16px;
+    border-radius: 0;
+    transition: all 0.7s ease;
+  }
 }

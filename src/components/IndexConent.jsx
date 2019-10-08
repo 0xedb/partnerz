@@ -22,37 +22,39 @@ function IndexConent() {
           </p>
         </div>
       </div>
-      <section className="services">
-        <h2>Our Services</h2>
-        <Service
-          title="Financial Planning"
-          pic={planning}
-          description="Partnerz FP works with individual clients and employers to deliver cut-through 
-          financial planning services. We have been very instrumental in reshaping the lives of 
-          redundant bankers who suffered the banking crises by helping them build emergency funds beforehand."
-        />
-        <Service
-          title="Investments"
-          pic={investment}
-          description="Diasporians looking to invest in the service sectors now have a trusted partner.
-           We also saved GH₵1.6 million of clients money from the Menzgold-Bitcoin bust by asking them 
-           to withdraw or sell off. We believe we owe our clients that fiduciary responsibility"
-        />
-        <Service
-          pic={welfare}
-          title="Scheme Administration"
-          description="Currently working with 19 different unions/associations/churches. With over 21,384 
-          members under their belt, we are forgin a future for their membership using the very principles
-           of financial planning at a large scale."
-        />
-        <Service
-          pic={consulting}
-          title="Strategy Consulting"
-          description="Gradually, we are becoming a household name in the starup ecosystem in Ghana.
-           We have advised 12+ startups from ideation to funding, go-to-market strategies, 
-           and to first 1000 customers."
-        />
-      </section>
+      <div className="services_container"> 
+        <section className="services">
+          <h2>Our Services</h2>
+          <Service
+            title="Financial Planning"
+            pic={planning}
+            description="Partnerz FP works with individual clients and employers to deliver cut-through 
+       financial planning services. We have been very instrumental in reshaping the lives of 
+       redundant bankers who suffered the banking crises by helping them build emergency funds beforehand."
+          />
+          <Service
+            title="Investments"
+            pic={investment}
+            description="Diasporians looking to invest in the service sectors now have a trusted partner.
+        We also saved GH₵1.6 million of clients money from the Menzgold-Bitcoin bust by asking them 
+        to withdraw or sell off. We believe we owe our clients that fiduciary responsibility"
+          />
+          <Service
+            pic={welfare}
+            title="Scheme Administration"
+            description="Currently working with 19 different unions/associations/churches. With over 21,384 
+       members under their belt, we are forgin a future for their membership using the very principles
+        of financial planning at a large scale."
+          />
+          <Service
+            pic={consulting}
+            title="Strategy Consulting"
+            description="Gradually, we are becoming a household name in the starup ecosystem in Ghana.
+        We have advised 12+ startups from ideation to funding, go-to-market strategies, 
+        and to first 1000 customers."
+          />
+        </section>
+      </div>
     </main>
   );
 }
