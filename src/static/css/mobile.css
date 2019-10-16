@@ -1,6 +1,6 @@
 .page_head {
   height: 100vh;
-  min-width: 300px;
+  min-width: 290px;
 }
 
 .navbar {
@@ -76,10 +76,12 @@
 
 .menu_overlay {
   position: absolute;
-  display: none;
-  width: 100%;
+  display: block;
+  width: 0%;
   height: 100vh;
+  visibility: hidden;
   background: #141211fa;
+  transition: all 0.7s ease;
 }
 
 .head_content {
@@ -87,7 +89,7 @@
   margin-top: var(--navbar_height);
   clip-path: polygon(0 0, 100% 0%, 100% 95%, 0 100%);
   height: 100%;
-  min-width: 300px;
+  min-width: 290px;
 }
 
 .bg_container,
@@ -139,6 +141,14 @@
   background: #b68324; */
 }
 
+.stock_feed {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 40px;
+  background: #040404ee; 
+}
+
 .credit {
   display: none;
   visibility: hidden;
@@ -173,12 +183,17 @@
   text-align: center;
 }
 
+.quote_image {
+  width: 30px;
+  height: 30px;
+}
+
 .services {
   width: 100%;
 }
 
 .services h2 {
-  text-align: center; 
+  text-align: center;
 }
 
 .service {
@@ -191,8 +206,8 @@
   margin: 16px;
   background: #eaecf0;
   border-radius: 6px;
-  height: 300px;  
-  min-width: 300px;
+  height: 300px;
+  min-width: 290px;
   transition: all 0.7s ease;
 }
 
@@ -227,14 +242,23 @@
   background: #f5f2f2fb;
   height: 300px;
   width: 100%;
-  min-width: 300px;
+  min-width: 290px;
 }
 
-.copyright, .dev_info {
-  position: relative;
-  text-align: center; 
-  top: 90%; 
+small {
   display: block;
+}
+
+.foot_bottom {
+  position: relative;
+  text-align: center;
+  background: #3e248ccc;
+  width: 100%;
+  top: 100%;
+  margin-bottom: 0;
+  padding: 10px; 
+  padding-bottom: 42px;
+  min-width: 290px;
 }
 
 .dev_info {
@@ -242,6 +266,11 @@
 }
 
 .mousekeyboard {
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
+}
+
+small a {
+  text-decoration: none;
+  color: #acdca6;
 }

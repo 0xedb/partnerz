@@ -8,7 +8,13 @@ function NavBar() {
     <nav className="navbar">
       <div className="navbar_content">
         <div className="navbar_item nav_menu">
-          <img className="nav_icon" src={menu} alt="menu" title="menu" />
+          <img
+            onClick={() => console.log('clicked')}
+            className="nav_icon"
+            src={menu}
+            alt="menu"
+            title="menu"
+          />
         </div>
         <div className="navbar_item">
           <img
@@ -21,7 +27,18 @@ function NavBar() {
           <img className="nav_icon" src={book} alt="book" title="book" />
         </div>
       </div>
-      <div className="menu_overlay">hello world!!</div>
+      <div className="menu_overlay"></div>
+      <div className="stock_feed">
+        <iframe
+          id="myframe" 
+          style={{width: '100%'}}
+          src="https://gsestockfeed.com/style2.php"
+          frameborder="0"
+          marginwidth="0"
+          marginheight="0"
+          scrolling="no"
+        ></iframe>
+      </div>
     </nav>
   );
 }

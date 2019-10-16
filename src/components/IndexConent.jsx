@@ -4,6 +4,7 @@ import planning from '../static/images/planning.svg';
 import investment from '../static/images/investment.svg';
 import welfare from '../static/images/welfare.svg';
 import consulting from '../static/images/consulting.svg';
+import quote from '../static/images/quote_start.svg';
 
 function IndexConent() {
   return (
@@ -14,6 +15,7 @@ function IndexConent() {
         </div>
         <div className="content_line"></div>
         <div className="partnerz_description">
+          <div><img className="quote_image" src={quote} alt="quote" /></div>
           <p>
             Partnerz FP is an advisory firm with a daring quest to use financial
             structures to affect lives positively. We are responsible for
@@ -22,7 +24,7 @@ function IndexConent() {
           </p>
         </div>
       </div>
-      <div className="services_container"> 
+      <div className="services_container">
         <section className="services">
           <h2>Our Services</h2>
           <Service

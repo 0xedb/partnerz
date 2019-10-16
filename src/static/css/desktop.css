@@ -81,7 +81,7 @@
 
   .services h2 {
     display: block;
-    width: 100%; 
+    width: 100%;
   }
 
   .service {
@@ -96,5 +96,19 @@
     margin: 16px;
     border-radius: 0;
     transition: all 0.7s ease;
+  }
+
+  .quote_image {
+    width: 50px;
+    height: 50px;
+  }
+
+  .stock_feed { 
+    position: static;
+    background: #0404049d; 
+  }
+
+  .foot_bottom {
+    padding-bottom: 14px;
   }
 }
