@@ -17,11 +17,13 @@ function NavBar() {
           />
         </div>
         <div className="navbar_item">
-          <img
-            className="navbar_brand"
-            src={partnerz_logo}
-            alt="partnerz logo"
-          />
+          <a className="logo_link" href="#">
+            <img
+              className="navbar_brand"
+              src={partnerz_logo}
+              alt="partnerz logo"
+            />
+          </a>
         </div>
         <div className="navbar_item">
           <img className="nav_icon" src={book} alt="book" title="book" />
@@ -30,7 +32,7 @@ function NavBar() {
       <div className="menu_overlay"></div>
       <div className="stock_feed">
         <iframe
-          id="myframe" 
+          id="myframe"
           style={{width: '100%'}}
           src="https://gsestockfeed.com/style2.php"
           frameborder="0"
