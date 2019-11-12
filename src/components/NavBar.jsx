@@ -17,7 +17,7 @@ function NavBar() {
           />
         </div>
         <div className="navbar_item">
-          <a className="logo_link" href="#">
+          <a className="btn_link" href="#">
             <img
               className="navbar_brand"
               src={partnerz_logo}
