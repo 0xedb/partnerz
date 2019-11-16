@@ -275,6 +275,15 @@ small a {
   color: #acdca6;
 }
 
+.flex-column {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
 .btn_link,
 .form-page {
   display: flex;
@@ -289,7 +298,16 @@ small a {
 }
 
 .form-page {
-  height: calc(100vh - 50px);
+  height: 100vh;
   background-color: #94b60b;
   flex-flow: column nowrap;
+}
+
+.form-container {
+  position: relative;
+  top: -20%;
+  padding: 20px auto;
+  background-color: #acdca6;
+  width: 100%;
+  padding: 10px;
 }
