@@ -2,8 +2,9 @@ import 'antd/dist/antd.css'
 import React, { useState } from 'react'
 import { Form, Input, Button, notification, Alert } from 'antd'
 import { useFormik } from 'formik'
+import axios from 'axios';
 
-  const handleSubmitAction = event => {
+  const handleSubmitAction = () => {
     notification.destroy(); 
      notification.info({
        message: 'Login Code',
@@ -14,11 +15,8 @@ import { useFormik } from 'formik'
   }
 
 const getCodeButton =   <Button onClick={handleSubmitAction} type='link'>get code</Button>
- 
 
-const SigninForm = () => { 
-
-
+const SigninForm = () => {  
 
   const formik = useFormik({
     initialValues: { email: '', code: '' },
