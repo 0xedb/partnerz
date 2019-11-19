@@ -2,6 +2,8 @@ import React from 'react';
 import partnerz_logo from '../static/images/partnerz_logo.svg';
 import menu from '../static/images/menu.svg';
 import book from '../static/images/book.svg';
+import {Icon} from 'antd';
+import {Link} from 'gatsby';
 
 function NavBar() {
   return (
@@ -17,16 +19,16 @@ function NavBar() {
           />
         </div>
         <div className="navbar_item">
-          <a className="btn_link" href="#">
+          <Link className="btn_link" to="#">
             <img
               className="navbar_brand"
               src={partnerz_logo}
               alt="partnerz logo"
             />
-          </a>
+          </Link>
         </div>
-        <div className="navbar_item">
-          <img className="nav_icon" src={book} alt="book" title="book" />
+        <div className="navbar_item"> 
+        <Link to='/form'><Icon className="nav_icon" type="form" style={{color: 'white'}} /></Link>         
         </div>
       </div>
       <div className="menu_overlay"></div>

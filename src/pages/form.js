@@ -1,8 +1,5 @@
 import React from "react";
-import HeadMeta from "../components/HeadMetadata";
-import IndexHead from "../components/IndexHead";
-import IndexContent from "../components/IndexConent";
-import IndexFooter from "../components/IndexFooter";
+import HeadMeta from "../components/HeadMetadata"; 
 import FormNav from "../components/FormNav";
 import FormPage from "../components/FormPage";
 

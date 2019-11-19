@@ -3,6 +3,10 @@
   min-width: 290px;
 }
 
+.min {
+  min-width: 290px;
+}
+
 .navbar {
   position: fixed;
   top: 0;
@@ -123,10 +127,13 @@
   color: #ffffff;
   border-left: 4px solid #94b60b;
   padding-left: 10px;
+  font-family: 'Varela Round', sans-serif;
 }
 
 .slogan {
   margin-block-start: 0;
+  color: #ffffff;
+  font-family: 'Varela Round', sans-serif;
 }
 
 .page_content {
@@ -294,12 +301,18 @@ small a {
 }
 
 .form_nav_img {
-  height: 100% !important;
+  height: 34px; 
+}
+
+.form_nav {
+  height: 48px;
+  padding: 4px;
+  justify-content: start;
 }
 
 .form-page {
   height: 100vh;
-  background-color: #94b60b;
+  background-color: #ffffff;
   flex-flow: column nowrap;
 }
 
@@ -308,6 +321,7 @@ small a {
   top: -20%;
   padding: 20px auto;
   background-color: #acdca6;
-  width: 100%;
+  width: 90%;
   padding: 10px;
+  max-width: 700px;
 }

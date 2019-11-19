@@ -12,6 +12,7 @@ function HeadMetadata({children, title}) {
         <meta name="app_name" content="Partnerz" />
         <meta name="author" content="Bruno Edoh" />
         <link rel="icon" type="image/png" href={`${favicon}`} />
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet" />
         <title>{title}</title>
         {children ? children : null}
       </Helmet>
