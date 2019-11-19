@@ -311,17 +311,19 @@ small a {
 }
 
 .form-page {
-  height: 100vh;
+  height: 100%;
   background-color: #ffffff;
   flex-flow: column nowrap;
+  padding-top: 20%;
 }
 
 .form-container {
   position: relative;
   top: -20%;
-  padding: 20px auto;
-  background-color: #acdca6;
-  width: 90%;
+  padding: 20px;
+  background-color: transparent;
+  width: 95%;
   padding: 10px;
-  max-width: 700px;
+  max-width: 400px;
 }
+ 

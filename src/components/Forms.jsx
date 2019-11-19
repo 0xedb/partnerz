@@ -1,27 +1,52 @@
-import 'antd/dist/antd.css';import React, {useState} from 'react';
-import {Form, Input, Icon} from 'antd';
+import 'antd/dist/antd.css'
+import React, { useState } from 'react'
+import { Form, Input, Icon } from 'antd'
+import { useFormik } from 'formik'
 
- const LoginForm = (props) => {
-   const [email, setEmail] = useState('kofi')
-  const handleSubmit = event => {
-    console.log (event);
-  };
-  const { getFieldDecorator } = props.form;
-  return <Form onSubmit={handleSubmit}><Form.Item>
-  {getFieldDecorator('email', {
-            rules: [{ required: true, message: 'Please input your email!' }],
-          })(
-            <Input size="large"
-              prefix={<Icon type="mail" style={{ color: 'rgba(0,0,0,.25)' }} />}
-              placeholder="email"
-              value={email}
-            />,
-          )}
-          <Form.Item>{<Input size='large' disabled type='text' placeholder='login code' />}</Form.Item>
-          <Form.Item>{<Input size='large' type='submit' value="Get Code" />}</Form.Item>
-  </Form.Item></Form>;
-};
+const SigninForm = () => {
+  const [field, setField] = useState({field: 'email', text: 'Get Code'});
 
-const SigninForm = Form.create({name: "login_form"})(LoginForm)
+  const handleSubmitAction = () => {
+    setField({field: 'code', text: 'Signin'})
+  }
 
-export {SigninForm};
+  const formik = useFormik({
+    initialValues: { email: '', code: '' },
+    onSubmit: values => {
+      console.log(values)
+    }
+  })
+
+  return (
+    <>
+    <Form onSubmit={formik.handleSubmit}>
+      <Form.Item label='Email'>
+        <Input
+          id='email'
+          type='email'
+          placeholder='example@example.com'
+          required
+          onChange={formik.handleChange}
+          size='large'
+          disabled={field.field === 'email' ? false : true}
+        />
+      </Form.Item>
+      <Form.Item>
+        <Input
+          id='code'
+          type='text'
+          placeholder='login code'
+          disabled={field.field === 'code' ? false : true}
+          onChange={formik.handleChange}
+          size='large'
+        />
+      </Form.Item>
+      <Form.Item>
+        <Input type='submit' value={field.text} size='large' onClick={handleSubmitAction} />
+      </Form.Item>
+    </Form>
+    </>
+  )
+}
+
+export { SigninForm }
