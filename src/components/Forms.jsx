@@ -1,14 +1,24 @@
 import 'antd/dist/antd.css'
 import React, { useState } from 'react'
-import { Form, Input, Icon } from 'antd'
+import { Form, Input, Button, notification, Alert } from 'antd'
 import { useFormik } from 'formik'
 
-const SigninForm = () => {
-  const [field, setField] = useState({field: 'email', text: 'Get Code'});
-
-  const handleSubmitAction = () => {
-    setField({field: 'code', text: 'Signin'})
+  const handleSubmitAction = event => {
+    notification.destroy(); 
+     notification.info({
+       message: 'Login Code',
+       duration: 8,
+       description: "The Login Code has been sent to your email",
+       placement: 'topLeft', 
+     })
   }
+
+const getCodeButton =   <Button onClick={handleSubmitAction} type='link'>get code</Button>
+ 
+
+const SigninForm = () => { 
+
+
 
   const formik = useFormik({
     initialValues: { email: '', code: '' },
@@ -17,32 +27,34 @@ const SigninForm = () => {
     }
   })
 
+  
+
   return (
     <>
     <Form onSubmit={formik.handleSubmit}>
-      <Form.Item label='Email'>
+      <Form.Item>
         <Input
           id='email'
           type='email'
-          placeholder='example@example.com'
+          placeholder='email'
           required
           onChange={formik.handleChange}
-          size='large'
-          disabled={field.field === 'email' ? false : true}
+          size='large' 
+          addonAfter={getCodeButton}
         />
       </Form.Item>
       <Form.Item>
         <Input
           id='code'
           type='text'
-          placeholder='login code'
-          disabled={field.field === 'code' ? false : true}
+          placeholder='code' 
           onChange={formik.handleChange}
           size='large'
+          required
         />
       </Form.Item>
       <Form.Item>
-        <Input type='submit' value={field.text} size='large' onClick={handleSubmitAction} />
+        <Input type='submit' value='Login' size='large' />
       </Form.Item>
     </Form>
     </>
