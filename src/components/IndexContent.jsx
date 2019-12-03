@@ -1,5 +1,5 @@
 import React from 'react';
-import Service from '../components/Service';
+import Service from './Service';
 import planning from '../static/images/planning.svg';
 import investment from '../static/images/investment.svg';
 import welfare from '../static/images/welfare.svg';

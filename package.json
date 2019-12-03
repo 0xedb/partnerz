@@ -12,7 +12,8 @@
     "normalize.css": "^8.0.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "react-reveal": "^1.2.2"
   },
   "scripts": {
     "dev:n": "gatsby develop -H 0.0.0.0 -p 8080",

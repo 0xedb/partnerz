@@ -1,6 +1,7 @@
 import React from 'react';
 import {Helmet} from 'react-helmet';
 import favicon from '../static/images/favicon.png';
+import 'antd/dist/antd.css'
 
 function HeadMetadata({children, title}) {
   return (

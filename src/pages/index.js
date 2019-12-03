@@ -1,7 +1,7 @@
 import React from 'react';
 import HeadMeta from '../components/HeadMetadata';
 import IndexHead from '../components/IndexHead';
-import IndexContent from '../components/IndexConent';
+import IndexContent from '../components/IndexContent';
 import IndexFooter from '../components/IndexFooter';
 
 function index() {

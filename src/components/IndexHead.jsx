@@ -10,7 +10,7 @@ function IndexHead() {
       <NavBar />
       <div className="to_content">
         <a href="#page_content">
-          <Icon className='arrow_image' type="down" style= {{fontSize:'24', heigh:'24'}} />
+          <Icon className='arrow_image' type="caret-down" style= {{fontSize:'40px' }} />
         </a>
       </div>
       <section className="head_content">
